@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="39dp"
+    android:background="@color/Background"
+    tools:context=".Score">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Your Score Is :"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp" />
+
+
+    <com.github.lzyzsd.circleprogress.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        app:circle_progress="45" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12dp"
+            android:text="Retry" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="110dp"
+            android:textSize="12dp"
+            android:textColor="@android:color/tertiary_text_light"
+            android:text="Exit" />
+    </LinearLayout>
+
+
+</LinearLayout>
